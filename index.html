@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>AAHKS 2026 · Lưu hành nội bộ CTCH BVQY 175</title>
+<link rel="icon" type="image/png" href="logo-light.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6f8; --surface:#fff; --ink:#10151d; --muted:#5a6473; --faint:#8a93a1; --line:#e2e6eb; --chip:#edf1f5;
+  --accent:#123d7a; --accent-ink:#fff; --accent-soft:#e6eef9; --hl:#fff7e0;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 2px 10px rgba(16,24,40,.06); --r:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1214; --surface:#171b1f; --ink:#e9ecef; --muted:#a2aab5; --faint:#7d8693; --line:#272d33; --chip:#1f252a;
+    --accent:#7fb2ff; --accent-ink:#0b1a30; --accent-soft:#16253a; --hl:#2b2612; --shadow:0 1px 2px rgba(0,0,0,.35);
+  }
+  :root:not([data-theme="light"]) .logo.l{display:none} :root:not([data-theme="light"]) .logo.d{display:block}
+}
+:root[data-theme="dark"]{
+  --bg:#0f1214; --surface:#171b1f; --ink:#e9ecef; --muted:#a2aab5; --faint:#7d8693; --line:#272d33; --chip:#1f252a;
+  --accent:#7fb2ff; --accent-ink:#0b1a30; --accent-soft:#16253a; --hl:#2b2612; --shadow:0 1px 2px rgba(0,0,0,.35);
+}
+:root[data-theme="dark"] .logo.l{display:none} :root[data-theme="dark"] .logo.d{display:block}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+
+/* đầu trang */
+.top{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:14px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex:none;min-width:0}
+.logo{width:44px;height:44px;flex:none}
+.logo.d{display:none}
+.brand b{display:block;font-size:18px;line-height:1.15;letter-spacing:-.01em}
+.brand small{display:block;color:var(--muted);font-size:12.5px;line-height:1.3}
+.search{flex:1;max-width:440px;margin-left:auto;position:relative}
+.search input{width:100%;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--bg);padding:0 14px 0 40px;outline:none}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.search svg{position:absolute;left:13px;top:12px;color:var(--faint)}
+.theme{flex:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);cursor:pointer;display:grid;place-items:center;color:var(--muted)}
+@media (max-width:720px){ .top-in{flex-wrap:wrap;height:auto;padding:10px 0;row-gap:10px} .search{order:3;max-width:none;flex-basis:100%} .brand small{font-size:11.5px} }
+
+/* thanh chuyên đề */
+.tracks{position:sticky;top:66px;z-index:25;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+@media (max-width:720px){ .tracks{top:0;position:relative} }
+.tracks .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.tracks .wrap::-webkit-scrollbar{display:none}
+.modes{flex:none;display:inline-flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--surface);margin-right:4px}
+.md{border:0;background:none;padding:6px 13px;cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted);white-space:nowrap}
+.md[aria-selected="true"]{background:var(--ink);color:var(--surface)}
+.tk{flex:none;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 14px;font-size:14px;white-space:nowrap}
+.tk small{color:var(--faint);margin-left:5px}
+.tk[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.tk[aria-current="page"] small{color:inherit;opacity:.75}
+
+/* trang chuyên đề */
+.head{padding:22px 0 6px}
+.crumb{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.crumb a{text-decoration:none;color:var(--accent);font-weight:500}
+.crumb span.sep{color:var(--faint)}
+h1{font-size:clamp(22px,3vw,30px);margin:6px 0 4px;letter-spacing:-.02em;line-height:1.25}
+.stats{color:var(--muted);margin:0}
+.courses{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 2px}
+.cs{border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:5px 12px;cursor:pointer;font-size:13.5px}
+.cs[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:600;background:var(--accent-soft)}
+h2.course{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:26px 0 10px;display:flex;align-items:center;gap:10px}
+h2.course:after{content:"";flex:1;height:1px;background:var(--line)}
+.session{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden;scroll-margin-top:130px}
+.session.flash{outline:3px solid var(--accent);outline-offset:-3px}
+.sh{padding:14px 16px 10px;border-bottom:1px solid var(--line)}
+.sh h3{margin:0;font-size:16.5px;line-height:1.35}
+.sh .en{color:var(--faint);font-size:13px;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{background:var(--chip);border-radius:7px;padding:2px 9px;font-size:12.5px;color:var(--muted)}
+.talk{display:grid;grid-template-columns:26px 112px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 16px;text-decoration:none;border-top:1px solid var(--line)}
+.talk:first-of-type{border-top:0}
+.talk:hover{background:var(--accent-soft)}
+.talk .n{color:var(--faint);font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+.talk img,.talk .ph{width:112px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:var(--chip);display:block}
+.talk b{display:block;font-weight:600;line-height:1.35}
+.talk .en{color:var(--faint);font-size:12.5px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.talk .who{color:var(--muted);font-size:12.5px}
+.wtag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:11.5px;font-weight:600;border-radius:6px;padding:1px 7px;margin-right:6px;vertical-align:1px}
+.talk .d{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:600px){ .talk{grid-template-columns:84px minmax(0,1fr);gap:10px;padding:10px 12px} .talk .n{display:none} .talk img,.talk .ph{width:84px} .talk .d{grid-column:2;font-size:12px} }
+.home{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:18px 0}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;text-decoration:none;box-shadow:var(--shadow);transition:transform .12s ease}
+.tile:hover{transform:translateY(-2px);border-color:var(--accent)}
+.tile b{font-size:17px;display:block}
+.tile span{color:var(--muted);font-size:13.5px}
+.empty{padding:60px 0;text-align:center;color:var(--muted)}
+.more{display:block;width:100%;border:0;border-top:1px solid var(--line);background:var(--surface);padding:10px;cursor:pointer;color:var(--accent);font-weight:600}
+.more:hover{background:var(--accent-soft)}
+
+/* trang bài */
+.player{position:relative;aspect-ratio:16/9;background:#000;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);margin-top:14px}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vh h1{margin-top:16px}
+.vh .en{color:var(--faint);font-size:14.5px}
+.note{color:var(--faint);font-size:12.5px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 4px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 14px;cursor:pointer;text-decoration:none;font-size:14px;font-weight:500}
+.btn.p{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn[aria-disabled="true"]{opacity:.4;pointer-events:none}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:24px;margin:18px 0 40px;align-items:start}
+@media (max-width:900px){ .cols{grid-template-columns:1fr} }
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-bottom:14px}
+.panel h2{font-size:13px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.panel ul{margin:0;padding-left:18px} .panel li{margin:5px 0}
+.plist a{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;padding:8px 6px;border-radius:8px;text-decoration:none;border-top:1px solid var(--line)}
+.plist a:first-child{border-top:0}
+.plist a:hover{background:var(--accent-soft)}
+.plist a[aria-current="true"]{background:var(--hl);font-weight:600}
+.plist .n{color:var(--faint);font-variant-numeric:tabular-nums;text-align:right}
+.plist small{display:block;color:var(--faint);font-weight:400}
+.people{list-style:none;padding:0!important;margin:0}
+.people li{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding:7px 0;margin:0!important}
+.people li:first-child{border-top:0}
+.people span{color:var(--faint);font-size:13px;text-align:right}
+.res{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.res:hover{border-color:var(--accent)}
+.res .crumb{margin-bottom:3px}
+mark{background:var(--hl);color:inherit;border-radius:3px}
+footer{border-top:1px solid var(--line);color:var(--faint);font-size:13px;padding:22px 0 40px;margin-top:30px}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:10px;font-size:14px;opacity:0;transition:.2s;pointer-events:none}
+#toast.on{opacity:1}
+.talk.soon{opacity:.6}
+.stag{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;margin-right:6px;border-radius:99px;background:var(--chip);color:var(--muted);vertical-align:2px}
+.soonbox{display:flex;align-items:center;justify-content:center;text-align:center;background:var(--chip)}
+.soonbox div{display:flex;flex-direction:column;gap:6px;padding:24px;max-width:420px}
+.soonbox b{font-size:18px}
+.soonbox span{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap top-in">
+  <a class="brand" href="#/">
+    <img class="logo l" src="logo-light.png" alt=""><img class="logo d" src="logo-dark.png" alt="">
+    <span><b>AAHKS 2026</b><small>Lưu hành nội bộ cho các bác sĩ CTCH BVQY 175</small></span>
+  </a>
+  <label class="search"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <input id="q" type="search" placeholder="Tìm bài giảng, diễn giả, nội dung…" autocomplete="off" aria-label="Tìm kiếm"></label>
+  <button class="theme" id="theme" type="button" aria-label="Đổi giao diện sáng/tối"><svg width="18" height="18" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+</div></header>
+<nav class="tracks" aria-label="Cách xem: chuyên đề, ngày, hình thức"><div class="wrap" id="tracks"></div></nav>
+<main class="wrap" id="app"><div class="empty">Đang tải thư viện…</div></main>
+<footer><div class="wrap" id="foot">Bản quyền nội dung thuộc AAHKS và các diễn giả. Dịch bởi Bs. Bảo Long.</div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fold = s => String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
+const clock = s => { s = Math.floor(s||0); const h = Math.floor(s/3600), m = Math.floor(s%3600/60), x = s%60;
+  return (h ? h + ":" + String(m).padStart(2,"0") : m) + ":" + String(x).padStart(2,"0"); };
+const hrs = s => { const h = s/3600; return h < 10 ? h.toLocaleString("vi-VN",{maximumFractionDigits:1}) : Math.round(h).toLocaleString("vi-VN"); };
+const store = { get(k, d){ try { const v = localStorage.getItem("tv." + k); return v == null ? d : v; } catch(e) { return d; } },
+                set(k, v){ try { localStorage.setItem("tv." + k, v); } catch(e) {} } };
+const toast = m => { const t = $("#toast"); t.textContent = m; t.classList.add("on"); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove("on"), 1800); };
+const enc = encodeURIComponent;
+
+let CAT = null, SES = {}, listScroll = {}, openS = new Set();
+const th = store.get("theme", ""); if (th) document.documentElement.dataset.theme = th;
+$("#theme").onclick = () => {
+  const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  document.documentElement.dataset.theme = dark ? "light" : "dark"; store.set("theme", document.documentElement.dataset.theme);
+};
+
+function route(){ const h = decodeURIComponent(location.hash.replace(/^#\/?/, "")); const [path, qs] = h.split("?");
+  return { parts: (path || "").split("/").filter(Boolean), q: new URLSearchParams(qs || "").get("q") || "" }; }
+const MODES = {cd: "Chuyên đề", hn: "Theo ngày", ht: "Hình thức"};
+let navMode = store.get("mode", "cd");
+const values = m => m === "cd" ? CAT.tracks : m === "hn" ? CAT.courses : CAT.formats;
+function inGroup(m, v){                      // → [[phiên, [số thứ tự bài thuộc nhóm]], …]
+  return CAT.sessions.map(s => {
+    if (m === "cd" && !s.tr.includes(v)) return null;
+    if (m === "hn" && s.c !== v) return null;
+    let idx = s.items.map((_, i) => i);
+    if (m === "ht") { idx = idx.filter(i => s.items[i].f === v); if (!idx.length) return null; }
+    return [s, idx]; }).filter(Boolean);
+}
+const ikey = it => it.v + "@" + it.s;            // 1 bài có thể nằm ở nhiều nhóm → đếm 1 lần
+const uniq = L => { const m = new Map(); L.forEach(([s, idx]) => idx.forEach(i => m.set(ikey(s.items[i]), s.items[i]))); return [...m.values()]; };
+const countL = L => uniq(L).length;
+const durL = L => uniq(L).reduce((a, it) => a + it.d, 0);
+const link = (m, v, s, i) => `#/${m}/${enc(v)}/${s.k}` + (i == null ? "" : `/${i}`);
+const COUNT = {};
+
+function navBar(m, cur){
+  navMode = m || navMode;
+  $("#tracks").innerHTML = `<span class="modes" role="tablist">${Object.entries(MODES).map(([k, lab]) =>
+      `<button class="md" data-m="${k}" aria-selected="${k === navMode}">${lab}</button>`).join("")}</span>` +
+    values(navMode).map(v => `<a class="tk" href="#/${navMode}/${enc(v)}" ${v === cur ? 'aria-current="page"' : ""}>${esc(v)}<small>${COUNT[navMode][v]}</small></a>`).join("");
+  document.querySelectorAll(".md").forEach(b => b.onclick = () => { navMode = b.dataset.m; store.set("mode", navMode); navBar(navMode, ""); });
+  const a = $("#tracks [aria-current]"); if (a) a.scrollIntoView({block:"nearest", inline:"center"});
+}
+
+function talkRow(m, v, s, i, n){
+  const it = s.items[i];
+  return `<a class="talk${it.g ? "" : " soon"}" href="${link(m, v, s, i)}"><span class="n">${n+1}</span>
+    ${it.th ? `<img loading="lazy" src="${esc(it.th)}" alt="">` : `<span class="ph"></span>`}
+    <span><b>${it.g ? "" : '<span class="stag">Sắp có</span>'}${esc(it.t)}</b><span class="en">${esc(it.e)}</span>${it.p.length ? `<span class="who">${esc(it.p.join(", "))}</span>` : ""}</span>
+    <span class="d">${clock(it.d)}</span></a>`;
+}
+function sessionCard(m, v, s, idx){
+  const d = idx.reduce((a, i) => a + s.items[i].d, 0), many = idx.length > 12 && !openS.has(s.k);
+  const tags = [m !== "ht" && s.f && s.f !== s.e ? s.f : "", m === "hn" ? "" : s.c].filter(Boolean);
+  return `<section class="session" id="${s.k}"><div class="sh"><h3>${esc(s.t)}</h3>${s.e !== s.t ? `<div class="en">${esc(s.e)}</div>` : ""}
+    <div class="tags">${tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}<span class="tag">${idx.length} bài</span><span class="tag">${clock(d)}</span></div></div>
+    ${idx.slice(0, many ? 10 : 1e9).map((i, n) => talkRow(m, v, s, i, n)).join("")}
+    ${many ? `<button class="more" data-open="${s.k}">Xem tất cả ${idx.length} bài ▾</button>` : ""}</section>`;
+}
+
+function home(){
+  navBar(navMode, "");
+  const all = CAT.sessions.map(s => [s, s.items.map((_, i) => i)]);
+  const tiles = m => values(m).map(v => { const L = inGroup(m, v);
+    return `<a class="tile" href="#/${m}/${enc(v)}"><b>${esc(v)}</b><span>${countL(L)} bài · ${hrs(durL(L))} giờ</span></a>`; }).join("");
+  $("#app").innerHTML = `<div class="head"><h1>Thư viện bài giảng AAHKS 2026</h1>
+      <p class="stats">Hội nghị thường niên Hội Phẫu thuật viên Khớp háng và Khớp gối Hoa Kỳ (AAHKS) — phụ đề tiếng Việt, xếp theo chuyên đề, ngày và hình thức.</p>
+      <p class="note" style="margin:4px 0 0">${CAT.total} bài giảng · ${hrs(durL(all))} giờ video · ${CAT.ready === CAT.total ? "đã có đủ phụ đề" : CAT.ready ? `đã có phụ đề ${CAT.ready}/${CAT.total} bài, các bài còn lại đang được dịch` : "phụ đề tiếng Việt đang được dịch"}</p></div>
+    <h2 class="course">Theo chuyên đề</h2><div class="home">${tiles("cd")}</div>
+    <h2 class="course">Theo ngày</h2><div class="home">${tiles("hn")}</div>
+    <h2 class="course">Theo hình thức</h2><div class="home">${tiles("ht")}</div>`;
+}
+
+function listView(m, v, focus){
+  navBar(m, v);
+  const L = inGroup(m, v), key = "loc." + m + "." + v;
+  let f = {}; try { f = JSON.parse(store.get(key, "{}")); } catch(e) {}
+  // bộ lọc phụ: chủ đề con (chuyên đề), hội nghị (chuyên đề / hình thức), chuyên đề (hội nghị)
+  const topics = m === "cd" ? (CAT.topics[v] || []) : [];
+  const courses = m !== "hn" ? CAT.courses.filter(c => L.some(([s]) => s.c === c)) : [];
+  const tracks = m === "hn" ? CAT.tracks.filter(t => L.some(([s]) => s.tr.includes(t))) : [];
+  if (f.tp && !topics.includes(f.tp)) f.tp = ""; if (f.c && !courses.includes(f.c)) f.c = ""; if (f.t && !tracks.includes(f.t)) f.t = "";
+  const shown = L.filter(([s]) => (!f.tp || s.tp.some(([t, tp]) => t === v && tp === f.tp)) && (!f.c || s.c === f.c) && (!f.t || s.tr.includes(f.t)));
+  const chips = (name, list, all) => list.length > 1 ? `<div class="courses">${[["", all], ...list.map(x => [x, x])].map(([x, lab]) =>
+      `<button class="cs" data-k="${name}" data-v="${esc(x)}" aria-pressed="${(f[name] || "") === x}">${esc(lab)}</button>`).join("")}</div>` : "";
+  const groups = m === "hn" ? [v] : courses;
+  const gOf = s => s.c;
+  let nSes = 0;
+  const body = groups.map(g => { const seen = new Set();
+        const G = shown.filter(([s]) => gOf(s) === g).map(([s, idx]) => [s, idx.filter(i => !seen.has(ikey(s.items[i])) && seen.add(ikey(s.items[i])))])
+                       .filter(([s, idx]) => idx.length);
+        nSes += G.length;
+        return G.length ? (m === "hn" ? "" : `<h2 class="course">${esc(g)}</h2>`) + G.map(([s, idx]) => sessionCard(m, v, s, idx)).join("") : ""; }).join("");
+  $("#app").innerHTML = `<div class="head"><div class="crumb"><a href="#/">Thư viện</a><span class="sep">›</span><span>${MODES[m]}</span></div>
+      <h1>${esc(v)}</h1><p class="stats">${countL(shown)} bài giảng · ${nSes} phiên · ${hrs(durL(shown))} giờ video</p>
+      ${chips("tp", topics, "Mọi chủ đề")}${chips("c", courses, "Mọi ngày")}${chips("t", tracks, "Mọi chuyên đề")}</div>
+    ${body || `<div class="empty">Chưa có bài giảng trong mục này.</div>`}`;
+  document.querySelectorAll(".cs").forEach(b => b.onclick = () => { f[b.dataset.k] = b.dataset.v; store.set(key, JSON.stringify(f)); listView(m, v); });
+  document.querySelectorAll(".more").forEach(b => b.onclick = () => { openS.add(b.dataset.open); const y = scrollY; listView(m, v); scrollTo(0, y); });
+  if (focus) { const el = document.getElementById(focus); if (el) { el.scrollIntoView({block:"start"}); el.classList.add("flash"); setTimeout(() => el.classList.remove("flash"), 1600); } }
+}
+
+async function talkView(m, v, k, i){
+  const s = SES[k]; i = +i;
+  if (!s || !s.items[i]) { $("#app").innerHTML = `<div class="empty">Không tìm thấy bài giảng. <a href="#/">Về thư viện</a></div>`; return; }
+  navBar(m, v);
+  const it = s.items[i], start = it.s > 0 ? `?t=${Math.floor(it.s)}` : "";
+  const idx = m === "ht" ? s.items.map((_, j) => j).filter(j => s.items[j].f === v) : s.items.map((_, j) => j);
+  const pos = idx.indexOf(i);
+  document.title = it.t + " · AAHKS 2026";
+  const prev = pos > 0 ? link(m, v, s, idx[pos-1]) : "", next = pos >= 0 && pos < idx.length - 1 ? link(m, v, s, idx[pos+1]) : "";
+  $("#app").innerHTML = `
+    <div class="head" style="padding-bottom:0"><div class="crumb"><a href="#/">Thư viện</a><span class="sep">›</span><span>${MODES[m]}</span><span class="sep">›</span>
+      <a href="#/${m}/${enc(v)}">${esc(v)}</a>${m !== "hn" ? `<span class="sep">›</span><span>${esc(s.c)}</span>` : ""}<span class="sep">›</span><a href="${link(m, v, s)}">${esc(s.t)}</a></div></div>
+    ${it.g ? `<div class="player"><iframe src="https://drive.google.com/file/d/${it.g}/preview${start}" allow="autoplay; fullscreen" allowfullscreen title="${esc(it.t)}"></iframe></div>` : `<div class="player soonbox"><div><b>Sắp có</b><span>Bài này đang được dịch phụ đề tiếng Việt và sẽ có trong thời gian tới.</span></div></div>`}
+    ${it.s > 0 ? `<p class="note">Bài này bắt đầu ở phút ${clock(it.s)} của video ghi cả phiên. Nếu video không tự nhảy tới, hãy kéo thanh thời gian tới ${clock(it.s)} hoặc mở trên Drive.</p>` : ""}
+    <div class="vh"><h1>${it.w ? '<span class="wtag">Cả phiên</span>' : ""}${esc(it.t)}</h1><div class="en">${esc(it.e)}</div>
+      <div class="tags"><span class="tag">${esc(s.c)}</span><span class="tag">${esc(it.f)}</span>${s.tr.filter(t => t !== "Khác").map(t => `<span class="tag">${esc(t)}</span>`).join("")}
+        <span class="tag">Bài ${pos+1}/${idx.length} của phiên</span><span class="tag">${clock(it.d)}</span></div>
+      <div class="actions"><a class="btn" href="${prev || "#"}" aria-disabled="${!prev}">← Bài trước</a><a class="btn" href="${next || "#"}" aria-disabled="${!next}">Bài tiếp theo →</a>
+        ${it.g ? `<a class="btn p" href="https://drive.google.com/file/d/${it.g}/view${start}" target="_blank" rel="noopener">Mở trên Google Drive ↗</a>` : ""}
+        <button class="btn" id="share" type="button">Sao chép link</button></div></div>
+    <div class="cols"><div id="main"></div><aside>
+      <div class="panel"><h2>Các bài trong phiên (${idx.length})</h2><div class="plist">${idx.map((j, n) => { const x = s.items[j];
+        return `<a href="${link(m, v, s, j)}" aria-current="${j===i}"><span class="n">${n+1}</span><span>${x.g ? "" : '<span class="stag">Sắp có</span>'}${esc(x.t)}<small>${esc(x.p.join(", "))}${x.p.length ? " · " : ""}${clock(x.d)}</small></span></a>`; }).join("")}</div></div>
+      <div id="spk"></div></aside></div>`;
+  $("#share").onclick = async () => { try { await navigator.clipboard.writeText(location.href); toast("Đã sao chép link bài này"); } catch(e) { prompt("Link:", location.href); } };
+  let d = { sum: [], spk: [] };
+  try { d = await (await fetch(`data/v/${it.v}.json`)).json(); } catch(e) {}
+  if (route().parts.slice(-2).join("/") !== [k, String(i)].join("/")) return;
+  const whole = s.items.filter(x => x.v === it.v).length > 1 || it.ch;
+  $("#main").innerHTML = d.sum.length ? `<div class="panel"><h2>${whole ? "Nội dung chính của cả phiên" : "Nội dung chính"}</h2><ul>${d.sum.map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+    <p class="note">Tóm tắt do AI tạo từ lời giảng.</p></div>` : "";
+  const ps = it.p.length ? d.spk.filter(p => it.p.includes(p.n)) : d.spk;
+  $("#spk").innerHTML = ps.length ? `<div class="panel"><h2>Diễn giả</h2><ul class="people">${ps.map(p => `<li>${esc(p.n)}<span>${esc(p.c)}</span></li>`).join("")}</ul></div>` : "";
+}
+
+function hl(text, words){ let out = esc(text); words.forEach(w => { if (w.length < 2) return;
+  const f = fold(text), i = f.indexOf(w); if (i >= 0) out = esc(text.slice(0, i)) + "<mark>" + esc(text.slice(i, i + w.length)) + "</mark>" + esc(text.slice(i + w.length)); }); return out; }
+function search(q){
+  navBar(navMode, "");
+  const ws = fold(q).trim().split(/\s+/).filter(Boolean), res = [];
+  CAT.sessions.forEach(s => s.items.forEach((it, i) => { if (ws.every(w => it._f.includes(w) || s._f.includes(w))) res.push([s, it, i]); }));
+  $("#app").innerHTML = `<div class="head"><h1>Kết quả cho “${esc(q)}”</h1><p class="stats">${res.length} bài giảng</p></div>` +
+    (res.length ? res.slice(0, 200).map(([s, it, i]) => `<a class="res" href="${link("cd", s.tr[0], s, i)}"><div class="crumb"><span>${esc(s.tr[0])}</span><span class="sep">›</span><span>${esc(s.c)}</span><span class="sep">›</span><span>${esc(s.t)}</span></div>
+      <b>${hl(it.t, ws)}</b><div class="note">${esc(it.e)}${it.p.length ? " · " + esc(it.p.join(", ")) : ""} · ${clock(it.d)}</div></a>`).join("") : `<div class="empty">Không tìm thấy bài giảng phù hợp.</div>`);
+}
+
+let last = "";
+function render(){
+  let { parts, q } = route();
+  if (parts.length && !MODES[parts[0]]) parts = ["cd", ...parts];          // link cũ dạng #/<chuyên đề>/…
+  const key = parts.join("/");
+  if (last && last.split("/").length === 2 && key !== last) listScroll[last] = scrollY;
+  if (q) { search(q); }
+  else if (!parts.length) { document.title = "AAHKS 2026 · Lưu hành nội bộ CTCH BVQY 175"; home(); }
+  else if (parts.length === 1) { navMode = parts[0]; home(); }
+  else if (parts.length === 2) { document.title = parts[1] + " · AAHKS 2026"; listView(parts[0], parts[1]); scrollTo(0, listScroll[key] || 0); }
+  else if (parts.length === 3) { listView(parts[0], parts[1], parts[2]); }
+  else { talkView(parts[0], parts[1], parts[2], parts[3]); scrollTo(0, 0); }
+  last = key;
+}
+let qT;
+$("#q").addEventListener("input", e => { clearTimeout(qT); qT = setTimeout(() => {
+  const v = e.target.value.trim(); history.replaceState(null, "", v ? "#/?q=" + enc(v) : "#/"); render(); }, 200); });
+
+fetch("data/catalog.json").then(r => r.json()).then(j => {
+  CAT = j;
+  CAT.sessions.forEach(s => { SES[s.k] = s; s._f = fold([s.t, s.e, s.c, s.tr.join(" "), s.f, s.tp.map(x => x[1]).join(" ")].join(" "));
+    s.items.forEach(it => it._f = fold([it.t, it.e, it.p.join(" "), it.m, it.f].join(" "))); });
+  for (const m of Object.keys(MODES)) { COUNT[m] = {}; values(m).forEach(v => COUNT[m][v] = countL(inGroup(m, v))); }
+  $("#foot").textContent = `Bản quyền nội dung thuộc AAHKS và các diễn giả. Cập nhật ${j.updated}. Dịch bởi Bs. Bảo Long.`;
+  addEventListener("hashchange", render); render();
+}).catch(() => { $("#app").innerHTML = `<div class="empty">Thư viện đang được cập nhật, vui lòng quay lại sau.</div>`; });
+</script>
+</body>
+</html>
