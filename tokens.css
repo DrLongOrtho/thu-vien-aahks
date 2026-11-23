@@ -1,0 +1,77 @@
+:root {
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem; --text-3xl: 2.074rem;
+  --text-display-s: 2.074rem; --text-display: 2.986rem; --text-section: 1.728rem; --text-title: 1.2rem; --text-lead: 1.2rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1320px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  --header-h: 76px; --bar-h: 60px;
+
+  /* AAHKS 2026 key visual, sampled from THEME.png */
+  --brand-indigo: oklch(38.8% 0.148 280);
+  --brand-cyan: oklch(78.5% 0.105 220);
+  --brand-green: oklch(74.4% 0.176 134);
+  --brand-yellow: oklch(83.6% 0.155 84);
+  --brand-cream: oklch(95.3% 0.039 84);
+  --brand-cream-2: oklch(87% 0.035 84);
+  --brand-lavender: oklch(61.9% 0.084 288);
+  --brand-lilac: oklch(78.6% 0.034 289);
+  --brand-mist: oklch(80.3% 0.028 208);
+  --brand-leaf: oklch(86.4% 0.089 121);
+  --brand-ink: oklch(28% 0.11 280);
+  --brand-veil: oklch(97% 0.01 120 / 0.42);
+
+  --color-paper: oklch(95% 0.006 280); --color-paper-2: oklch(92.6% 0.008 280); --color-paper-3: oklch(90% 0.011 280);
+  --color-surface: oklch(98.7% 0.004 280);
+  --color-ink: oklch(23% 0.035 280); --color-ink-2: oklch(37% 0.03 280); --color-muted: oklch(49% 0.025 280);
+  --color-rule: oklch(88% 0.012 280);
+  --color-head: var(--brand-indigo);
+  --color-accent: var(--brand-indigo); --color-accent-hover: oklch(33% 0.13 280); --color-accent-ink: oklch(97% 0.015 84);
+  --color-accent-soft: oklch(93.5% 0.022 280);
+  --color-focus: oklch(44% 0.19 280);
+  --color-mark: oklch(90% 0.1 88);
+  --color-player: oklch(16% 0.02 280);
+  --color-shadow: oklch(20% 0.05 280 / 0.08);
+
+  --font-display: "Lexend", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier: var(--font-body);
+  --display-weight: 600;
+  --radius-card: 18px; --radius-thumb: 10px; --radius-pill: 999px; --rule-hair: 1px; --shadow-card: none;
+  --tracking-display: -0.02em;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --color-paper: oklch(17% 0.015 280); --color-paper-2: oklch(20% 0.016 280); --color-paper-3: oklch(24% 0.018 280);
+  --color-surface: oklch(21% 0.017 280);
+  --color-ink: oklch(94% 0.008 280); --color-ink-2: oklch(84% 0.012 280); --color-muted: oklch(72% 0.018 280);
+  --color-rule: oklch(31% 0.02 280);
+  --color-head: oklch(88% 0.05 280);
+  --color-accent: oklch(76% 0.1 280); --color-accent-hover: oklch(81% 0.09 280); --color-accent-ink: oklch(18% 0.04 280);
+  --color-accent-soft: oklch(26% 0.035 280);
+  --color-focus: oklch(80% 0.13 280);
+  --color-mark: oklch(45% 0.09 84);
+  --color-player: oklch(10% 0.01 280);
+  --color-shadow: oklch(5% 0.01 280 / 0);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: oklch(17% 0.015 280); --color-paper-2: oklch(20% 0.016 280); --color-paper-3: oklch(24% 0.018 280);
+    --color-surface: oklch(21% 0.017 280);
+    --color-ink: oklch(94% 0.008 280); --color-ink-2: oklch(84% 0.012 280); --color-muted: oklch(72% 0.018 280);
+    --color-rule: oklch(31% 0.02 280);
+    --color-head: oklch(88% 0.05 280);
+    --color-accent: oklch(76% 0.1 280); --color-accent-hover: oklch(81% 0.09 280); --color-accent-ink: oklch(18% 0.04 280);
+    --color-accent-soft: oklch(26% 0.035 280);
+    --color-focus: oklch(80% 0.13 280);
+    --color-mark: oklch(45% 0.09 84);
+    --color-player: oklch(10% 0.01 280);
+    --color-shadow: oklch(5% 0.01 280 / 0);
+    color-scheme: dark;
+  }
+}
